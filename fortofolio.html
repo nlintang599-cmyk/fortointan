@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lintang Nur Anggraeni | Portofolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; transition: background 0.3s, color 0.3s; }
+    .gradient-text {
+      background: linear-gradient(90deg, #a855f7, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .dark .gradient-text {
+      background: linear-gradient(90deg, #d8b4fe, #f9a8d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .toggle-btn {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .toggle-btn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-pink-50 via-purple-50 to-white text-gray-800 dark:from-gray-900 dark:via-purple-950 dark:to-gray-900 dark:text-gray-200">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white/70 dark:bg-gray-900/70 backdrop-blur-md shadow-md z-50 transition">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-semibold text-purple-600 dark:text-purple-300">🌸 Intan Portofolio</h1>
+      <div class="flex items-center space-x-4">
+        <div class="hidden md:flex space-x-6">
+          <a href="#home" class="text-gray-700 dark:text-gray-300 hover:text-pink-500">Home</a>
+          <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-pink-500">Tentang</a>
+          <a href="#hobby" class="text-gray-700 dark:text-gray-300 hover:text-pink-500">Hobi</a>
+          <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-pink-500">Kontak</a>
+        </div>
+        <button id="theme-toggle" class="toggle-btn text-xl text-purple-600 dark:text-yellow-300">
+          🌙
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-36 pb-20 text-center" data-aos="fade-up">
+    <img src="https://cdn-icons-png.flaticon.com/512/706/706830.png" 
+         alt="Foto Profil" 
+         class="w-36 h-36 mx-auto rounded-full border-4 border-pink-300 shadow-xl hover:scale-105 transition">
+    <h2 class="text-4xl font-bold gradient-text mt-5">Lintang Nur Anggraeni</h2>
+    <p class="text-gray-600 dark:text-gray-300 mt-2 text-lg">Mahasiswa Teknik Informatika | Universitas Sultan Fatah Demak</p>
+    <p class="mt-5 text-pink-700 dark:text-pink-300 italic">“Selalu belajar, tersenyum, dan menikmati proses.”</p>
+    <a href="#about" class="inline-block mt-8 px-6 py-3 bg-gradient-to-r from-pink-400 to-purple-400 text-white rounded-full shadow-md hover:shadow-lg hover:scale-105 transition">Lihat Profil ↓</a>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section id="about" class="max-w-4xl mx-auto px-6 py-20" data-aos="fade-up">
+    <h3 class="text-3xl font-semibold text-center gradient-text mb-10">Tentang Saya</h3>
+    <div class="bg-white/80 dark:bg-gray-800/70 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition">
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+        Halo! Nama saya <b>Lintang Nur Anggraeni</b> — biasa dipanggil <b>Intan</b>.  
+        Saya lahir di <b>Demak</b> pada Oktober 2004, baru saja berusia 21 tahun 🎉.  
+        Saat ini saya menempuh studi di <b>Universitas Sultan Fatah Demak</b>, jurusan <b>Teknik Informatika semester 5</b>.  
+        Hobi saya menyanyi, healing ke alam, dan menikmati waktu bersama teman-teman.  
+        Saya juga penggemar buah — terutama <b>durian, nangka, dan mangga</b> 🥭💖.  
+        Dulu saya pernah tinggal di Bogor selama 10 tahun sebelum kembali ke Demak pada tahun 2015 mengikuti orang tua yang pindah tugas.  
+        Senang bisa berbagi sedikit cerita tentang diri saya. Terima kasih sudah mampir ke portofolio saya 🌸
+      </p>
+    </div>
+  </section>
+
+  <!-- Hobi -->
+  <section id="hobby" class="bg-gradient-to-r from-purple-50 via-pink-50 to-white dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 py-20">
+    <div class="max-w-5xl mx-auto px-6" data-aos="fade-up">
+      <h3 class="text-3xl font-semibold text-center gradient-text mb-12">Hobi Saya</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white/80 dark:bg-gray-800 p-8 rounded-3xl shadow-lg text-center hover:-translate-y-2 hover:shadow-2xl transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/3208/3208750.png" class="w-16 mx-auto mb-4" alt="Menyanyi">
+          <h4 class="text-lg font-semibold text-pink-600 dark:text-pink-400">Menyanyi</h4>
+          <p class="text-gray-600 dark:text-gray-300 mt-2">Saya suka menyanyi karena bisa mengekspresikan perasaan dan membuat suasana hati jadi lebih bahagia.</p>
+        </div>
+        <div class="bg-white/80 dark:bg-gray-800 p-8 rounded-3xl shadow-lg text-center hover:-translate-y-2 hover:shadow-2xl transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/808/808399.png" class="w-16 mx-auto mb-4" alt="Healing">
+          <h4 class="text-lg font-semibold text-pink-600 dark:text-pink-400">Healing</h4>
+          <p class="text-gray-600 dark:text-gray-300 mt-2">Pergi ke pantai atau pegunungan membuat saya lebih tenang dan semangat menjalani hari-hari baru.</p>
+        </div>
+        <div class="bg-white/80 dark:bg-gray-800 p-8 rounded-3xl shadow-lg text-center hover:-translate-y-2 hover:shadow-2xl transition">
+          <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="w-16 mx-auto mb-4" alt="Buah">
+          <h4 class="text-lg font-semibold text-pink-600 dark:text-pink-400">Makan Buah</h4>
+          <p class="text-gray-600 dark:text-gray-300 mt-2">Buah favorit saya adalah durian, nangka, dan mangga — manis, segar, dan bikin happy!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="py-20" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold gradient-text mb-8">Hubungi Saya</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-6">Ingin mengenal saya lebih dekat? Yuk, terhubung melalui:</p>
+      <div class="space-y-3 text-lg">
+        <p>📧 <b>Email:</b> <a href="mailto:lintangn.a204@gmail.com" class="text-pink-600 dark:text-pink-400 hover:underline">lintangn.a204@gmail.com</a></p>
+        <p>📱 <b>WhatsApp:</b> <a href="https://wa.me/6281328712402" class="text-pink-600 dark:text-pink-400 hover:underline">0813-2871-2402</a></p>
+        <p>📸 <b>Instagram:</b> <a href="https://instagram.com/lintangnur_001" class="text-pink-600 dark:text-pink-400 hover:underline">@lintangnur_001</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-pink-300 via-purple-300 to-pink-300 dark:from-gray-900 dark:via-purple-950 dark:to-gray-900 text-center py-5">
+    <p class="text-white dark:text-pink-200 text-sm">© 2025 Lintang Nur Anggraeni | Dibuat dengan 💜 oleh Intan</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+
+    // Periksa preferensi tersimpan
+    if (localStorage.getItem("theme") === "dark") {
+      html.classList.add("dark");
+      themeToggle.textContent = "☀";
+    }
+
+    themeToggle.addEventListener("click", () => {
+      html.classList.toggle("dark");
+      if (html.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+        themeToggle.textContent = "☀";
+      } else {
+        localStorage.setItem("theme", "light");
+        themeToggle.textContent = "🌙";
+      }
+    });
+  </script>
+
+</body>
+</html>
